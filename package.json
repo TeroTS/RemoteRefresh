@@ -1,0 +1,13 @@
+{
+  "name": "remote-refresh",
+  "main": "server.js",
+  "dependencies" : {
+    "express" : "latest",
+    "mongoose" : "latest",
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "method-override": "latest",
+    "express-session": "latest",
+    "nodejs-websocket": "latest"
+  }
+}

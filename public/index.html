@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pageRefresh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      html, body {
+        height: 100%;
+      }
+      body {
+        position: relative;
+      }
+      iframe {
+        position: absolute;
+        height: 101.5%; /* Fixes the bottom margin on IE9 Mobile */
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div ng-view id="view"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/ng-websocket/ng-websocket.js"></script>
+    <script src="app.js"></script>
+    <script src="homeCtrl.js"></script>
+    <script src="remoteCtrl.js"></script>
+  </body>
+</html>
